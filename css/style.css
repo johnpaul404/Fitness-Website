@@ -1,0 +1,321 @@
+
+* {
+	box-sizing: border-box;
+  }
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+	background-color: #000000;
+	color:#fff;
+	
+}
+  
+  /* Global */ 
+ .container {
+ 	width:100%;
+ 	margin: auto;
+ 	overflow: hidden;
+ }
+
+   ul{
+ 	margin: 0;
+	padding:0;
+	list-style: none; 
+	margin: 0;
+
+
+ }
+
+ .button_1{
+    height: 38px;
+    background: #00FF00;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+
+ }
+
+ .column{
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+ 	background: #35424a;
+ 	color:#ffffff;
+
+ }
+ header img{
+ 	float:left;
+ 	width:100px;
+ 	height:70px;
+ 	margin-right:20px;
+    border-radius: 8px;
+  
+    
+
+ }
+   
+/* Header **/
+
+ header {
+ 	background: #35424a;
+ 	color:#ffffff;
+ 	padding-top: 30px;
+ 	min-height: 30px;
+ 	border-bottom: #00FF00 3px solid;
+ } 
+
+
+ header a{
+ 	color:#ffffff;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	font-size:16px;
+
+
+ }
+ header h1{
+ 	display:inline;
+ }
+
+
+
+
+ header li{
+	margin-bottom:5px;
+ 	display:inline-block;
+ 	padding: 0 20px 0 20px;
+ }
+
+ header #branding{
+ 	float:left;
+ }
+
+ header #branding h1{
+ 	margin:0;
+ }
+ header nav{
+ 	float:right;
+ 	margin-top: 20px;
+
+ }
+
+ header .highlight, header .current a {
+ 	color:#00FF00;
+ 	font-weight: bold;
+ }
+
+ header a:hover {
+ 	font-weight: bold;
+    background: #808080;  
+    padding: 10px;
+  
+
+ 	
+ }
+
+ 
+
+ /*Showcase */
+ #showcase{
+ 	min-height: 200px;
+ 	height: auto;
+ 	text-align:center;
+ 	text-shadow: 10px;
+ 	color:black;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/fitness.jpg');	
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: center;
+
+ 	
+
+ 
+ }
+
+
+ #showcase h1{
+ 	border:0;
+ 	text-shadow: 20px 20px 20px black;
+    text-transform: auto;
+ 	margin-top: 100px;
+ 	font-size:55px;
+ 	padding: 40px;
+ 	color:#ffffff;
+ 	margin-top: 10px;
+ 	margin-bottom: 5px;
+ 
+ 
+}
+
+#showcase p {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding:25px;
+	font-style: italic;
+	color:#ffffff;
+	margin-bottom:15px;
+	margin-top: 0;
+
+
+}
+ 
+ /* Newsletter */
+#newsletter {
+	padding:15px;
+	color:#ffffff;
+	background: #35424a;
+}
+
+#newsletter h1 {
+	float:left;
+}
+
+#newsletter form {
+	float:right;
+	margin-top: 15px
+
+}
+
+
+#newsletter input[type="email"] {
+	padding:4px;
+	height: 38px;
+	width:250px;
+}
+
+
+/* Boxes */
+#boxes {
+	margin-top:20px;
+}
+
+
+#boxes .box{
+	float:left;
+	text-align: center;
+	width: 28%;
+	padding:10px;
+	color:white;
+
+
+}
+
+#boxes .box img {
+	width: 90px;
+	
+
+}
+
+.box a {
+	background: #35424a;
+ 	color:#ffffff;
+ 	text-decoration: none;
+ }
+
+.box a:hover {
+ 	color:#FF0000;
+ 	font-weight: bold;
+
+}
+
+/*sidebar */
+#sidebar:after{
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+#sidebar{
+	text-align: center;
+
+}
+
+footer{
+	padding: 3px;
+	margin-top: 32px;
+	color:#ffffff;
+	background-color: #808080;
+	text-align: center;
+}
+img#logo {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    top: 1px;
+    left: 0;
+}
+
+img {
+    border-style: none;
+}
+
+.column {
+float: left; 
+width: 33.33%;
+padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.dark, #services{
+	background:#35424a;
+}
+
+.row h1{
+	text-align:center;
+	text-transform: uppercase;
+	background: #23a74b;
+	margin: 0;
+	
+}
+
+
+
+  
+/*Media Queries */
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	  #newsletter h1,
+	  #newsletter form,
+	  #boxes .box,
+	  article#main-col,
+	  aside#sidebar,
+	  .column,
+	 
+	  footer{
+		float:none;
+		text-align: center;
+		width:100%;
+
+	}
+
+	header{
+		padding-bottom: 20px;
+
+	}
+	#showcase h1{
+		margin-top: 40px;
+
+	}
+	#newsletter button, .quote button{
+		display:block;
+		width:100%;
+	}
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width:100%;
+		margin-bottom:5px;
+
+	}
+	
+
+}
